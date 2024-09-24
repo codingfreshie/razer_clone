@@ -11,19 +11,31 @@
     font-family: 'razor1';
     src: url("./RazerF5.woff")format('woff');
 }
-.store-drop {
+/* .store-drop {
+    
+} */
+.drop{
     position: fixed;
-    height: 100px;
+    height: 432px;
     width: 100%;
-    top: calc(3.75rem - 1.5px);
+    /* top: calc(3.75rem - 1.5px); */
+    top: -500px;
     z-index: 100;
-    background-color: #44d62c;
+    background-color: rgb(34, 34, 34);
     left: 0;
     display: none;
+    
 }
 .navbar li:hover div {
     display: block;
+    top: calc(3.75rem - 1.5px);
+    /* transition: all 8s ease-in-out; */
+    /* transform: translateY(calc(3.75rem - 1.5px)); */
+    transition-duration: 8s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-delay: 1s;
 }
-.navbar li div:hover{
+/* .navbar li div:hover{
     display: block;
-}
+} */
