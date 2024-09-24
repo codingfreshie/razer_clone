@@ -16,7 +16,7 @@
 } */
 .drop{
     position: fixed;
-    height: 432px;
+    height: 350px;
     width: 100%;
     /* top: calc(3.75rem - 1.5px); */
     top: -500px;
