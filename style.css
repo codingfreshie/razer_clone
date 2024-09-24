@@ -1,0 +1,408 @@
+*{
+    /* font-family: sans-serif; */
+    border: none;
+    padding: 0;
+    margin: 0;
+    --green:#44d62c;
+    --nav-grey:rgb(187, 187, 187);
+    --white:rgb(255, 255, 255);
+}
+@font-face {
+    font-family: 'razor1';
+    src: url("./RazerF5.woff")format('woff');
+}
+a {
+    text-decoration: none;
+    color: #bbb;
+}
+li {
+    list-style: none;
+}
+body {
+    overflow-x: hidden;
+    background-color: black;
+    padding-top: 3.75rem;
+    color: white;
+    font-family: Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+nav {
+    height: 3.75rem;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--green);
+    z-index: 100;
+}
+.navbar {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar a{    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: 'razor1';
+    text-align: center;
+    padding: 19px 24.5px 18px;
+}
+.main-logo a{
+    padding: 0;
+}
+.navbar .main-logo a:hover{
+    border: black solid 0px;
+    padding: 0;
+}
+.navbar a:hover{
+    color: white;
+    border-bottom: white solid 1px;
+}
+.razor-logo{
+    width: 35px;
+    height: 35px;
+}
+/* .search-icon span{
+    font-family: phoenix-icons !important;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    text-decoration: none;
+    content: "\e90c";
+    color: white;
+} */
+.grey-ad {
+    position: relative;
+    top:  1px;
+    background-color: #555;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    width: 100%;
+    padding: 11.5px 40px 9.5px 30px;
+    color: #eee;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: regular;
+    letter-spacing: .05px;
+    line-height: 20px;
+    gap: 4px;
+
+}
+.grey-ad a {
+    color: #eee;
+}
+.grey-ad a:hover {
+    text-decoration: underline;
+}
+.part1{
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/f11fcdd4b93a0d224060b70173542f7f/razer-blackwidow-v4-pro-75-homepage-large-2x.webp");
+
+}
+.part2{
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/9aaa4c7d3671f1b1a5f916f45569205c/razer-wolverine-v3-pro-homepage-desktop2x.webp");
+
+}
+.part3{
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/9aaa4c7d3671f1b1a5f916f45569205c/intel-gamer-days-2024-homepage-desktop2x.webp");
+
+}
+.one-pic{
+    background-repeat: no-repeat;
+    /* object-fit: contain; */
+    background-size: cover;
+    height: 75vw;
+    background-position: center;
+    position: relative;
+    width: calc(100% - 2*(1.875rem));
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    color: white;
+    border-bottom: 10px solid #222;
+    /* margin-bottom: 10px;
+    background-color: red; */
+}
+.one-pic>a{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* z-index: 2; */
+    text-decoration: none;
+}
+.one-pic h2{
+    max-width: unset;
+    padding-top: 4.75rem;
+    text-align: center;
+    font-family: 'razor1';
+    font-size: 3.5rem;
+    font-weight: 600;
+    /* letter-spacing: .0625rem; */
+    line-height: 1;
+    max-width: unset;
+    position: relative;
+    z-index: 1;
+    
+}
+.one-pic h3{
+    font-size: 1.75rem;
+    max-width: unset;
+    text-align: center;
+    font-family: 'razor1';
+    font-weight: 300;
+    padding: 0.625rem 0 0 0;
+    line-height: 1;
+    max-width: unset;
+    position: relative;
+    z-index: 1;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* gap: 10px; */
+    padding: .375rem 0 0 0;
+    flex-wrap: nowrap;
+}
+.links a{
+    font-family: 'razor1';
+    font-weight: 300;
+    color: white;
+    font-size: 1.3125rem;
+    padding: 0 1rem;
+    z-index: 3;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.links a:hover .greater{
+    text-decoration: none;
+}
+.links a:hover span{
+    text-decoration: none;
+}
+.links a span{
+    color: var(--green);
+    text-decoration: none !important;
+}
+.two-pics {
+    display: flex;
+    gap: 10px;
+    background-color: #222;
+    height: 580px;
+    border-bottom: 10px solid #222;
+
+}
+.two-pics h2{
+    padding-top: 3.375rem;
+    font-size: 2.5rem;
+
+}
+.two-pics h3{
+    font-size: 1.313rem;
+    padding: 0.75rem 0 0 0;
+}
+.two-pics .links a{
+    font-size: 1.0625rem;
+}
+.part4-1 {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/28f82961cbd74143180218b506df313a/razercon-2024-b-950x580-desktop.webp");
+    height: 580px;
+    border: none;
+    
+}
+.part4-2 {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/28f82961cbd74143180218b506df313a/razer-kraken-v4-homepage-b-950x580-desktop.webp");
+    height: 580px;
+    border: none;
+    
+}
+.part5-1 {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/e9d1f25b84209661bb678afc1a1580f8/razer-blade-18-2024-b-950x580-desktop.webp");
+    height: 580px;
+    border: none;
+    
+}
+.part5-2 {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/28f82961cbd74143180218b506df313a/edg-bundle-special-b-950x580-desktop.webp");
+    height: 580px;
+    border: none;
+    
+}
+.part6-1 {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/28f82961cbd74143180218b506df313a/chair-q3-campaign-b-950x580-desktop.webp");
+    height: 580px;
+    border: none;
+    
+}
+.part6-2 {
+    background-image: url("https://assets2.razerzone.com/images/pnx.assets/44fff28db38394dcfc43ecb1ffaf9802/razer-x-fortnite-collab-b-950x580-desktop.webp");
+    height: 580px;
+    border: none;
+    
+}
+.footer-icons {
+    height: 34px;
+    width: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.footer-icons a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+}
+.f-icon-1 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0001-facebook-grey.svg");
+}
+.f-icon-2 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0003-instagram-grey.svg");
+}
+.f-icon-3 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0018-threads-grey.svg");
+}
+.f-icon-4 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0005-twitter-grey.svg");
+}
+.f-icon-5 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0008-youtube-grey.svg");
+}
+.f-icon-6 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0014-tiktok-grey.svg");
+}
+.f-icon-7 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0009-twitch-grey.svg");
+}
+.f-icon-8 {
+    background-image: url("https://assets2.razerzone.com/images/phoenix/SM0015-discord-grey.svg");
+}
+footer {
+    font-size: 12px;
+    background-color: #111;
+    padding-bottom: 1.5625rem;
+    padding-top: 1.5625rem;
+    padding-right: 1.875rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.foot1{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-align: start;
+    font-family: Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.col {
+    padding-left: .75rem;
+    padding-right: .75rem;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    color: #fff;
+    position: relative;
+}
+.col label{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0;
+    min-width: 4.375rem;
+    /* padding-bottom: 0.75rem; */
+    font-size: 12px;
+    position: relative;
+}
+.foot-lists{
+    position: relative;
+    top: 0.75rem;
+}
+.foot-lists li{
+
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+.foot1-5 .foot-lists li{
+    padding-bottom: 0rem;
+}
+.foot1-6 {
+    padding-left: .75rem;
+    padding-right: .75rem;
+    max-width: 25%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.razer-slogan {
+    font-family: 'razor1';
+    padding-bottom: .875rem;
+    text-align: right;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    color: #44d62c;
+    padding-right: 0.4rem;
+    /* padding-bottom: 0.25rem; */
+}
+.foot2 {
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border-bottom: 1px solid #555;
+    margin: 1rem 0;
+}
+.foot3{
+    padding-left: .75rem;
+        padding-right: .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    width: 100%;
+    justify-content: space-between;
+}
+.foot3-1 {
+    display: flex;
+    color: #999;
+
+}
+.foot3-l {
+    padding-right: 2.3rem;
+}
+.foot3-r ul{
+    display: flex;
+}
+.foot3-r li{
+    color: #999;
+
+}
+.foot3-2 {
+    text-align: right;
+}
+.foot3-end {
+    display: flex;
+}
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}

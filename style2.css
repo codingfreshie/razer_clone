@@ -1,0 +1,29 @@
+*{
+    /* font-family: sans-serif; */
+    border: none;
+    padding: 0;
+    margin: 0;
+    --green:#44d62c;
+    --nav-grey:rgb(187, 187, 187);
+    --white:rgb(255, 255, 255);
+}
+@font-face {
+    font-family: 'razor1';
+    src: url("./RazerF5.woff")format('woff');
+}
+.store-drop {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: calc(3.75rem - 1.5px);
+    z-index: 100;
+    background-color: #44d62c;
+    left: 0;
+    display: none;
+}
+.navbar li:hover div {
+    display: block;
+}
+.navbar li div:hover{
+    display: block;
+}
